@@ -17,12 +17,12 @@ const countOnly = function(allItems, itemsToCount) {
       if (results[item]) {// AND if the item (i.e. name) within the array is truthy (in this case not 0), we add 1
         results[item] += 1;
       } else {// otherwise
-      results[item] = 1;// Otherwise, we just assign the item (i.e. name) as a key and give it a value of 1 since we know it occurs at least once.
+        results[item] = 1;// Otherwise, we just assign the item (i.e. name) as a key and give it a value of 1 since we know it occurs at least once.
       }
     }
   }
   return results;
-}
+};
 
 // TEST CODE
 const firstNames = [

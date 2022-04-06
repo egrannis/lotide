@@ -6,17 +6,18 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const string = 'lighthouse Labs';
-
 const countLetter = function(string) {
   const lowerCaseString = string.toLowerCase();
   const newObj = {};
   for (const letter of lowerCaseString) {
     if (letter !== ' ') {
-        !newObj[letter] ? newObj[letter] = 1 : newObj[letter]++;
-      }
+      !newObj[letter] ? newObj[letter] = 1 : newObj[letter]++;
     }
+  }
   return newObj;
 };
 
-console.log(countLetter(string));
+const string = 'lighthouse Labs';
+assertEqual(countLetter(string)['l'],2);
+assertEqual(countLetter(string)['i'],1);
+assertEqual(countLetter(string)[' '], undefined);

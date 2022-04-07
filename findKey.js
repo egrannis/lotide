@@ -9,14 +9,12 @@ const assertEqual = function(actual, expected) {
 
 // findKey function
 const findKey = function(object,callback) {
-  let keyFound = undefined; // assume that the key is falsy and only change if it is truthy
   for (let key in object) {
     if (callback(object[key])) { // if the callback function using the key is truthy, we want to return the key
-      keyFound = key;
-      return keyFound; // we want to only return the first key that is truthy
+      return key;
     }
   }
-  return keyFound;
+  return; // don't need a return statement here for this to work
 };
 
 // Testing of findKey function

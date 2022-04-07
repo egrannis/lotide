@@ -1,17 +1,15 @@
 // function, takeUntil, which takes in 2 parameters: 1) array to work with, 2) callback (lodash calls predciate)
 
-const takeUntil = function(array, callback) {
-  let emptyArray = [];
-  for (let i = 0; i < array.length; i++) {
-    if (callback(array[i])) {
-      return emptyArray;
-    } else {
-      emptyArray.push(array[i]);
+const takeUntil = function(array, callback) {// [1, 2, 5, 7, 2, -1, 2, 4, 5];
+  let returnArray = [];
+  for (let element of array) {
+    if (callback(element)) {
+      return returnArray;
     }
+    returnArray.push(element);
   }
-  return emptyArray;
+  return returnArray;
 };
-
 
 // pasting in eqArrays function from previous exercise
 const eqArrays = function(array1, array2) {

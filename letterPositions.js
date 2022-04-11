@@ -30,6 +30,10 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
+
+// Testing Below
 assertArraysEqual(letterPositions("hello").e, [1]);
 assertArraysEqual(letterPositions("hello").l, [2,3]);
 assertArraysEqual(letterPositions("Lighthouse Labs").l, [0,11]);

@@ -11,6 +11,8 @@ const takeUntil = function(array, callback) {// [1, 2, 5, 7, 2, -1, 2, 4, 5];
   return returnArray;
 };
 
+module.exports = takeUntil;
+
 // pasting in eqArrays function from previous exercise
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {

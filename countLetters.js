@@ -17,6 +17,8 @@ const countLetter = function(string) {
   return newObj;
 };
 
+module.exports = countLetter;
+
 const string = 'lighthouse Labs';
 assertEqual(countLetter(string)['l'],2);
 assertEqual(countLetter(string)['i'],1);

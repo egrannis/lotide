@@ -31,6 +31,10 @@ const map = function(array, callback) {
   return results;
 };
 
+module.exports = map;
+
+// Testing Below
+
 const words = ["ground", "control", "to", "major", "tom"];
 const empty = [];
 const numbers = [5, 6, 7, 8];

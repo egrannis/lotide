@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetter = function(string) {
+const countLetters = function(string) {
   const lowerCaseString = string.toLowerCase();
   const newObj = {};
   for (const letter of lowerCaseString) {
@@ -17,7 +17,7 @@ const countLetter = function(string) {
   return newObj;
 };
 
-module.exports = countLetter;
+module.exports = countLetters;
 
 const string = 'lighthouse Labs';
 assertEqual(countLetter(string)['l'],2);

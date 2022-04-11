@@ -4,11 +4,11 @@ const assert = require('chai').assert;
 // Testing Code Below
 
 describe("#tail", () => {
-  it("returns [2, 3] when we perform tail on an array [1,2,3]", () => {
+  it("returns [2, 3] when we perform tail on an array of numbers [1,2,3]", () => {
     assert.deepEqual(tail([1,2,3]), [2,3]);
   });
 
-  it("returns 'Lighthouse' when we perform tail on an array ['Hello', 'Lighthouse']", () => {
+  it("returns 'Lighthouse' when we perform tail on an array of strings ['Hello', 'Lighthouse']", () => {
     assert.deepEqual(tail(['Hello', 'Lighthouse']), ['Lighthouse']);
   });
 
